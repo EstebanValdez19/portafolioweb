@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <!-- Cargar Google Fonts para una tipografía elegante -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Mi Portafolio</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#experiencia-laboral">Experiencia</a></li>
+                <li><a href="#formacion-academica">Formación</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="{{ url_for('descargar_cv') }}">Descargar CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- Sección principal con presentación -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="{{ url_for('static', filename='images/foto.jpeg') }}" alt="Foto de perfil" class="profile-img">
+            <h1>Daniel Esteban Valdez Ojeda</h1>
+            <p>Ingeniero en Ciencias de la Computación</p>
+            <p>Especializado en desarrollo de software y Base de Datos.</p>
+        </div>
+    </section>
+
+    <!-- Sección Hoja de Vida -->
+    <section id="experiencia-laboral" class="section">
+        <h2>Experiencia Laboral</h2>
+        <div class="info">
+            <div class="info-block">
+                <h3>2018 Comité Cívico del Carchi</h3>
+                <p>Capacitador, herramientas tecnológicas</p>
+            </div>
+           
+            <div class="info-block">
+                <h3>2023 Unidad Educativa "LOUIS V. DE BROGLIE"</h3>
+                <p>Doncente de Computación</p>
+            </div>
+            <div class="info-block">
+                <h3>2024 Instituto Tecnológico Universitario Vida Nueva</h3>
+                                <p>Docente de la Carrera Desarrollo de Software</p>
+            </div>
+        </div>
+    </section>
+    <section id="formacion-academica" class="section">
+         <!-- Formación académica -->
+         <h2>Formación Académica</h2>
+        <div class="info">
+            <div class="info-block">
+                <h3>2022 Universidad Politécnica Estatal del Carchi</h3>
+                <h4>Título:</h4>
+                <p>Ingeniería en Ciencias de la Computación</p>
+                
+            </div>
+            <div class="info-block">
+                <h3>2017 Colegio Nacionla Cumbayá</h3>
+                <h4>Título:</h4>
+                <p>Desarollo de Aplicaciones Informáticas</p>
+            </div>
+        </div>
+    </section>
+
+        <section id="cursos" class="section">
+        <!-- Cursos realizados -->
+        <div class="cursos">
+            <h2>Cursos Realizados</h2>
+            <ul>
+                    <body>
+                        <button onclick="abrirPDF()" target="_blank" class="social-btn">Inteligencia Artificial </button><script src="static/js/script.js"></script>
+                        <button onclick="abrirPDF1()" target="_blank" class="social-btn">CiberSeguridad Terminología </button><script src="static/js/script.js"></script>
+                        <button onclick="abrirPDF2()" target="_blank" class="social-btn">CiberSeguridad </button><script src="static/js/script.js"></script>
+                        <button onclick="abrirPDF3()" target="_blank" class="social-btn">Inteligencia Artificial Prompt </button><script src="static/js/script.js"></script>
+                        <button onclick="abrirPDF4()" target="_blank" class="social-btn">Microsoft UTN </button><script src="static/js/script.js"></script>
+                        <button onclick="abrirPDF5()" target="_blank" class="social-btn">Computación</button> </button><script src="static/js/script.js"></script>
+                    </body>    
+             
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="section">
+        <h2>Contáctame en Redes Sociales</h2>
+        <div class="social-buttons">      
+              
+            <a href="https://www.facebook.com/juanperez" target="_blank" class="social-btn"><img src="static/images/codigo.png" ></a>
+            <a href="https://www.instagram.com/daniel.valdez.98499/" target="_blank" class="social-btn"><img src="static/images/instagram.png" ></a>
+            <a href="https://www.linkedin.com/in/daniel-valdez1997/" target="_blank" class="social-btn"><img src="static/images/linkedin.png" ></a>
+            <a href="https://github.com/EstebanValdez19" target="_blank" class="social-btn"><img src="static/images/github.png" ></a>
+            <a href="https://wa.me/+593978971751" target="_blank" class="social-btn"><img src="static/images/whatsapp.png" ></a>
+        </div>
+    </section>
+</body>
+</html>

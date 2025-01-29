@@ -1,0 +1,168 @@
+/* Reseteo de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente predeterminada */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #333;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #81615c;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Hero (Sección de presentación) */
+.hero {
+    background: linear-gradient(135deg, #3b3b3b, #555);
+    color: #fff;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Sección general */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Información de la hoja de vida */
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.info-block {
+    width: 30%;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.info-block h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.cursos ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.cursos a {
+    color: #ff6347;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.cursos a:hover {
+    color: #fff;
+}
+
+/* Redes sociales */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #ff6347;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+/* Efectos de hover en los bloques */
+.info-block, .social-links a, .cursos a {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.info-block:hover {
+    transform: translateY(-10px);
+    background-color: #444;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+.profile-img {
+    width: 200px; /* Tamaño de la imagen */
+  height: 200px; /* Tamaño de la imagen */
+  border-radius: 50%; /* Hace la imagen redonda */
+  object-fit: cover; /* Asegura que la imagen cubra el círculo */
+  object-position: center 30%; /* Centra horizontalmente y mueve 20% hacia arriba verticalmente */
+        transform: translateY(-50px); /* Mueve la imagen 20px hacia arriba */
+  }
+  .social-btn {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+.social-btn:hover {
+    background-color: #777;
+}
+
+.social-buttons {
+    margin-top: 20px;
+}
+  
+
+
+
+
+
+
